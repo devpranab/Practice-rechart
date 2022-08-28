@@ -1,23 +1,17 @@
-import logo from './logo.svg';
 import './App.css';
+import Rechart from './components/Rechart';
+import AreaChartexample from './components/AreaChart';
+
+//https://recharts.org/en-US
+//npm install recharts
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <h1>Simple Rechart</h1>
+      <Rechart />
+      <h1>Area Chart</h1>
+      <AreaChartexample />
     </div>
   );
 }
